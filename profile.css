@@ -1,0 +1,417 @@
+
+:root {
+    --primary-blue: #d7dde8; /* The main theme color */
+    --accent-green: #10B981; /* For the success/accept buttons */
+    --text-color: #1F2937;
+   background: linear-gradient(to right, #003459 ,#2A52BE,#00a8e8 );
+    --card-bg: #FFFFFF;
+    --shadow-light: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-top: 10%;
+    padding: 0;
+}
+
+
+.logo{
+    width: 100px;
+    height: 80px;
+}
+.nav-bar{
+    display: flex;
+    gap: 400px;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+}
+
+.nav-bar h1{
+    color: white;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.nav-bar ul {
+    margin-left: 55%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 120px;
+    white-space: nowrap;
+    
+}
+
+.nav-bar a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    transition: transform 0.95s ease, background-color 0.85s ease;
+}
+
+.nav-bar a:hover {
+    border-radius: 20px;
+    background-color: white;
+    color: #00a8e8;
+    text-decoration:underline
+}
+
+.nav-bar li{
+    float: left
+}
+
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.profile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-left: 5px solid var(--primary-blue);
+    overflow: hidden;
+}
+
+/* Card Hover Animation */
+.profile-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-8px);
+}
+
+.card-content {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+}
+
+/* Image Styling */
+.profile-image-wrapper {
+    flex-shrink: 0;
+    width: 144px;
+    height: 144px;
+    margin-right: 24px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid var(--primary-blue);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-out;
+}
+
+.profile-card:hover .profile-image {
+    transform: scale(1.03);
+}
+
+/* Text Details */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.name-highlight {
+    color: var(--primary-blue);
+    font-weight: 900;
+}
+
+.skill-info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.skill-info p {
+    margin: 5px 0;
+}
+
+.info-label {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* Accept Button Styling */
+.accept-action {
+    flex-shrink: 0;
+    margin-left: 24px;
+}
+
+.accept-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--accent-green);
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+    transition: all 0.2s ease-in-out;
+    min-width: 140px;
+}
+
+/* Button Hover and Active Animations */
+.accept-btn:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+}
+
+.accept-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(16, 185, 129, 0.6);
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 3;
+}
+
+
+
+.profile-form-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+}
+
+.form-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    border-bottom: 2px solid #E5E7EB;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-full-width {
+    grid-column: 1 / -1;
+}
+
+/* Contact/Image Section */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-picture-edit {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Save Button Style */
+.save-btn {
+    background-color: var(--accent-green);
+    color: white;
+    font-weight: 700;
+    margin-right: 5%;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+}
+.save-btn:hover {
+    background-color: #059669; 
+    transform: scale(1.03); 
+}
+.save-btn:active {
+    transform: scale(0.97); 
+}
+
+/* Submission Message Animation */
+#status-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #D1FAE5; 
+    color: #065F46; 
+    border: 1px solid #34D399;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.show-message {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Footer */
+
+
+.global-footer {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-links {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-link, .social-icon {
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-link:hover, .social-icon:hover {
+    color: #93C5FD;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    .card-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-image-wrapper {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .profile-details {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .accept-action {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .accept-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+
+    .profile-form-container {
+        padding: 20px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .profile-picture-edit {
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
