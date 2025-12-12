@@ -26,7 +26,7 @@ No installation is required — simply open any `.html` file in a browser.
 Examples:
 - Icons from **Font Awesome**  
 
-## 🛠️ How to Use  
+## How to Use  
 Since this is a static website, no installation is needed.
 
 To view locally:  
