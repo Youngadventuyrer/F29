@@ -15,10 +15,7 @@ No installation is required — simply open any `.html` file in a browser.
 *(Add more features if needed.)*
 
 ## Group Members  
-- Name 1  
-- Name 2  
-- Name 3  
-- Name 4  
+-test 
 *(Add/remove as needed.)*
 
 ## Citations / References  
@@ -32,3 +29,4 @@ Since this is a static website, no installation is needed.
 To view locally:  
 1. Download or clone the repository  
 2. Open `index.html` in any browser
+
