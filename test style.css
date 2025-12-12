@@ -1,0 +1,56 @@
+/* body{
+    background-image: url("apple_img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-postion: center;
+    background-color: rgba(255, 255, 255, 0.5)
+
+} 
+.green{
+    color: green;
+} */
+table, tr,th, td {
+    border: 1px black solid;
+    text-align: center;
+    border-collapse: collapse;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1,div{
+    text-align:center;
+    border: 1px black solid;
+    border-radius: 15px;
+}
+iframe,div{
+    text-align:center;
+}
+
+.hover-text {
+   color: black;
+}
+.hover-text:hover {
+   background-image: linear-gradient(rgb(114, 110, 63));
+   color:transparent;
+   background-clip: text;
+}
+p{
+    color:blueviolet;
+}
+green {
+    color:green;
+}
+.bold {
+    font-weight: bold;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+.military {
+    color:brown
+}
